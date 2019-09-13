@@ -1,0 +1,9 @@
+.hero__banner {}
+
+.main__slider {
+    width: 100%;
+}
+
+.main__slider>img {
+    width: 100%;
+}

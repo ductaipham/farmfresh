@@ -1,0 +1,88 @@
+/* 1.header
+2. Top navigation
+3.main nav */
+
+/* 1.header */
+header {
+    background: url(../img/header-bkg.jpg);
+}
+
+/* 2.Top navigation */
+.top__nav {
+    padding: 24px 0;
+}
+
+.top__nav .top__nav__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}
+
+.top__nav .top__nav__container .language__and__currency {
+    display: flex;
+    width: 40%;
+    /* background-color: red; */
+}
+
+.language__and__currency ul.language__and__currency__ul {
+    display: flex;
+    position: relative;
+}
+
+ul.language__and__currency__ul>li {
+    padding: 0 24px 0 0;
+}
+
+ul.language__and__currency__ul>li:hover .sub__menu {
+    display: block;
+    position: absolute;
+}
+
+.sub__menu {
+    display: none;
+}
+
+/* logo */
+.top__nav__logo {
+    /* background-color: blueviolet; */
+}
+
+.top__nav__logo>a>img {
+    width: 100%;
+}
+
+/* user login search */
+.user__login__search {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 40%;
+    /* background-color: aqua; */
+}
+
+ul.user__login__search__ul {
+    display: flex;
+    /* background-color: aqua; */
+}
+
+ul.user__login__search__ul>li {
+    padding: 0 0 0 24px;
+}
+
+/* 3. Main nav */
+.main__nav {}
+
+nav.main__navigation__nav {}
+
+.main__navigation__nav ul.main__menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+ul.main__menu>li {
+    padding: 0 20px;
+}
