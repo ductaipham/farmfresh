@@ -1,3 +1,11 @@
+/*
+1. Hero banner
+2. Main content 
+    2.1 Categories List
+    2.2 Product List
+*/
+
+/* 1. Hero banner */
 .hero__banner {}
 
 .main__slider {
@@ -6,4 +14,96 @@
 
 .main__slider>img {
     width: 100%;
+}
+
+/* 2.Main Content */
+.main__content {}
+
+.main__content__container {
+    /* display: flex; */
+}
+
+
+/* 2.1.Categories List */
+.categories__list__container {
+    padding: 20px 0;
+}
+
+.categories__list__container ul.categories__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.categories__list>li {
+    padding: 4px 20px;
+    margin: 0 10px;
+
+    border-radius: 50px;
+    border: 2px solid #f1f1f1;
+    transition: all .35s;
+}
+
+ul.categories__list>li:hover {
+    background-color: #7fba00;
+}
+
+ul.categories__list>li:hover>a {
+    color: white;
+}
+
+ul.categories__list>li.active {
+    background-color: #7fba00;
+}
+
+ul.categories__list>li.active>a {
+    color: white;
+}
+
+ul.categories__list>li>a {
+    text-decoration: none;
+    color: black;
+}
+
+/* 2.2 Product List */
+.product__list {}
+
+.product__list__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    margin: 0 -8px;
+}
+
+.product__list__container .product__item {
+    width: 25%;
+    padding: 0 8px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.product__item>.product__item__image>img {
+    width: 100%;
+}
+
+.product__item__content {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+ul.star__rank {
+    display: flex;
+    justify-content: center;
+}
+
+.add__to__cart__btn {
+    display: none;
+    text-transform: uppercase;
+    text-decoration: none;
 }
