@@ -4,6 +4,7 @@
     2.1 Categories List
     2.2 Product List
 3. Customer review
+4. See more btn
 */
 
 /* 1. Hero banner */
@@ -70,6 +71,10 @@ ul.categories__list>li>a {
 /* 2.2 Product List */
 .product__list {}
 
+.product__list.product__list__none {
+    display: none;
+}
+
 .product__list__container {
     display: flex;
     flex-flow: row wrap;
@@ -83,8 +88,6 @@ ul.categories__list>li>a {
     padding: 0 8px;
     margin: 20px 0;
     cursor: pointer;
-    /* border: 2px solid #f1f1f1; */
-    /* border-radius: 50px; */
 }
 
 .product__item>.product__item__image>img {
@@ -149,7 +152,6 @@ ul.star__rank>li {
     justify-content: center;
     width: 100%;
     position: absolute;
-    /* background-color: aquamarine; */
 }
 
 .review__top__image {
@@ -195,4 +197,58 @@ ul.star__rank>li {
 
 .review__bottom .review__bottom__description {
     width: 68%;
+}
+
+/* 4. See more btn */
+.see__more__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.see__more__btn.see__more__btn__none {
+    display: none;
+}
+
+.see__more__btn>p {
+    border: 2px solid #f1f1f1;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .35s;
+    width: 120px;
+    text-align: center;
+    /* background-color: #7fba00; */
+}
+
+.see__more__btn>p:hover {
+    color: #fff;
+    background-color: #7fba00;
+}
+
+/* 5. Hide more btn */
+.hide__more__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.hide__more__btn.hide__more__btn__none {
+    display: none;
+}
+
+.hide__more__btn>p {
+    border: 2px solid #f1f1f1;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .35s;
+    width: 120px;
+    text-align: center;
+    /* background-color: #7fba00; */
+}
+
+.hide__more__btn>p:hover {
+    color: #fff;
+    background-color: #7fba00;
 }

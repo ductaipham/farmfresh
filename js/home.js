@@ -1,5 +1,5 @@
 'use strict';
-
+// Category click
 const categoriesListElement = document.querySelectorAll('#categoriesList>li');
 console.log(categoriesListElement);
 
@@ -16,4 +16,25 @@ if (categoriesListElement) {
             categories.classList.add('active');
         });
     }
+}
+
+// See more btn
+const seeMoreBtnElement = document.getElementById('seeMoreBtn');
+const productListElement = document.getElementById('productList');
+const seeMoreElement = document.querySelector('.see__more__btn');
+const hideMoreElement = document.querySelector('.hide__more__btn');
+const hideMoreBtnElement = document.getElementById('hideMoreBtn');
+if (seeMoreBtnElement && productListElement && seeMoreElement) {
+    seeMoreBtnElement.addEventListener('click', (e) => {
+        productListElement.classList.remove('product__list__none');
+        seeMoreElement.classList.toggle('see__more__btn__none');
+        hideMoreElement.classList.remove('hide__more__btn__none');
+    });
+
+    hideMoreBtnElement.addEventListener('click', (e) => {
+        productListElement.classList.toggle('product__list__none');
+        seeMoreElement.classList.remove('see__more__btn__none');
+        hideMoreElement.classList.toggle('hide__more__btn__none');
+
+    });
 }
