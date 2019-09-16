@@ -5,6 +5,7 @@
 /* 1.header */
 header {
     background: url(../img/header-bkg.jpg);
+    padding: 0 0 20px 0;
 }
 
 /* 2.Top navigation */
@@ -85,4 +86,9 @@ nav.main__navigation__nav {}
 
 ul.main__menu>li {
     padding: 0 20px;
+}
+
+ul.main__menu>li>a {
+    text-decoration: none;
+    color: black;
 }
