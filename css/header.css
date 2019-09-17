@@ -1,8 +1,15 @@
-/* 1.header
+/*
+1.header tag
 2. Top navigation
-3.main nav */
+    2.1 language and currency
+        2.1.1 sub menu
+    2.2 logo
+    2.3 user login search
+3. main nav 
+    3.1 main menu
+*/
 
-/* 1.header */
+/* 1.header  tag*/
 header {
     background: url(../img/header-bkg.jpg);
     padding: 0 0 20px 0;
@@ -22,10 +29,10 @@ header {
     width: 100%;
 }
 
+/* 2.1 language and currency */
 .top__nav .top__nav__container .language__and__currency {
     display: flex;
     width: 40%;
-    /* background-color: red; */
 }
 
 .language__and__currency ul.language__and__currency__ul {
@@ -37,36 +44,33 @@ ul.language__and__currency__ul>li {
     padding: 0 24px 0 0;
 }
 
+/* 2.1.1 sub menu */
+.sub__menu {
+    display: none;
+}
+
 ul.language__and__currency__ul>li:hover .sub__menu {
     display: block;
     position: absolute;
 }
 
-.sub__menu {
-    display: none;
-}
-
-/* logo */
-.top__nav__logo {
-    /* background-color: blueviolet; */
-}
+/* 2.2 logo */
+.top__nav__logo {}
 
 .top__nav__logo>a>img {
     width: 100%;
 }
 
-/* user login search */
+/* 2.3 user login search */
 .user__login__search {
     display: flex;
     justify-content: flex-end;
 
     width: 40%;
-    /* background-color: aqua; */
 }
 
 ul.user__login__search__ul {
     display: flex;
-    /* background-color: aqua; */
 }
 
 ul.user__login__search__ul>li {
@@ -78,6 +82,7 @@ ul.user__login__search__ul>li {
 
 nav.main__navigation__nav {}
 
+/* 3.1 main menu */
 .main__navigation__nav ul.main__menu {
     display: flex;
     flex-flow: row nowrap;

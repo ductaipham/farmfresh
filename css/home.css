@@ -3,8 +3,15 @@
 2. Main content 
     2.1 Categories List
     2.2 Product List
+        2.2.1 star rank
+        2.2.2 add to cart button
 3. Customer review
-4. See more btn
+    3.1 customer review title
+    3.2 review main
+        3.2.1 review top
+        3.2.2 review bottom
+4. See more button
+5. hide more button
 */
 
 /* 1. Hero banner */
@@ -103,8 +110,7 @@ ul.categories__list>li>a {
     align-items: center;
 }
 
-
-
+/* 2.2.1 star rank */
 ul.star__rank {
     display: flex;
     justify-content: center;
@@ -114,6 +120,7 @@ ul.star__rank>li {
     color: yellow;
 }
 
+/* 2.2.2 add to cart button */
 .add__to__cart__btn {
     display: none;
     text-transform: uppercase;
@@ -127,12 +134,14 @@ ul.star__rank>li {
 
 .customer__review__container {}
 
+/* 3.1 cutomer review title */
 .customer__review__container .customer__review__title {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
 }
 
+/* 3.2 review main */
 .review__container {
     display: flex;
     flex-flow: row nowrap;
@@ -147,6 +156,7 @@ ul.star__rank>li {
     position: relative;
 }
 
+/* 3.2.1 review top */
 .review__top {
     display: flex;
     justify-content: center;
@@ -174,6 +184,7 @@ ul.star__rank>li {
     width: 70%;
 }
 
+/* 3.2.2 review bottom */
 .review__bottom {
     display: flex;
     justify-content: space-between;
