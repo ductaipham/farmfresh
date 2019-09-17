@@ -47,11 +47,25 @@ ul.language__and__currency__ul>li {
 /* 2.1.1 sub menu */
 .sub__menu {
     display: none;
+    background-color: #666666;
+    padding: 4px 12px;
+    width: 100px;
+    border-radius: 6px;
+}
+
+.sub__menu>li {
+    cursor: pointer;
+    color: white;
+}
+
+.sub__menu>li:hover {
+    color: #7fba00;
 }
 
 ul.language__and__currency__ul>li:hover .sub__menu {
     display: block;
     position: absolute;
+
 }
 
 /* 2.2 logo */
@@ -75,6 +89,12 @@ ul.user__login__search__ul {
 
 ul.user__login__search__ul>li {
     padding: 0 0 0 24px;
+    cursor: pointer;
+    transition: all .35s;
+}
+
+ul.user__login__search__ul>li:hover {
+    color: #7fba00;
 }
 
 /* 3. Main nav */
