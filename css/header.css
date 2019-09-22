@@ -47,10 +47,12 @@ ul.language__and__currency__ul>li {
 /* 2.1.1 sub menu */
 .sub__menu {
     display: none;
-    background-color: #666666;
+
     padding: 4px 12px;
     width: 100px;
     border-radius: 6px;
+
+    background-color: #666666;
 }
 
 .sub__menu>li {
@@ -65,7 +67,6 @@ ul.language__and__currency__ul>li {
 ul.language__and__currency__ul>li:hover .sub__menu {
     display: block;
     position: absolute;
-
 }
 
 /* 2.2 logo */
