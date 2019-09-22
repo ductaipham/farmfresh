@@ -1,0 +1,31 @@
+/* 
+
+*/
+
+.breabcrum__section {}
+
+.breabcrum__section__container {
+    display: flex;
+    align-items: center;
+}
+
+.breabcrum__section__container .breabcrum__section__icon {
+    padding: 0 8px;
+    /* border-right: 1px solid */
+}
+
+.breabcrum__section__container .breabcrum__section__name {
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+
+.breabcrum__section__container .breabcrum__section__name::before {
+    content: "|";
+    padding: 0 4px;
+    color: #262626;
+}
+
+.breabcrum__section__container .breabcrum__section__name>div {
+    padding: 0 4px;
+}

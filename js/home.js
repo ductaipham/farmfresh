@@ -20,7 +20,6 @@ carousel();
 
 // Category click
 const categoriesListElement = document.querySelectorAll('#categoriesList>li');
-console.log(categoriesListElement);
 
 if (categoriesListElement) {
     for (const categories of categoriesListElement) {
