@@ -11,110 +11,214 @@
 
 /* 1.header  tag*/
 header {
-    background: url(../img/header-bkg.jpg);
-    padding: 0 0 20px 0;
+  background: url(../img/header-bkg.jpg);
+  padding: 0 0 20px 0;
 }
 
 /* 2.Top navigation */
 .top__nav {
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 .top__nav .top__nav__container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 
-    width: 100%;
+  width: 100%;
 }
 
 /* 2.1 language and currency */
 .top__nav .top__nav__container .language__and__currency {
-    display: flex;
-    width: 40%;
+  display: flex;
+  width: 40%;
 }
 
 .language__and__currency ul.language__and__currency__ul {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
-ul.language__and__currency__ul>li {
-    padding: 0 24px 0 0;
+ul.language__and__currency__ul > li {
+  padding: 0 24px 0 0;
 }
 
 /* 2.1.1 sub menu */
 .sub__menu {
-    display: none;
+  display: none;
 
-    padding: 4px 12px;
-    width: 100px;
-    border-radius: 6px;
+  padding: 4px 12px;
+  width: 100px;
+  border-radius: 6px;
 
-    background-color: #666666;
+  background-color: #666666;
 }
 
-.sub__menu>li {
-    cursor: pointer;
-    color: white;
+.sub__menu > li {
+  cursor: pointer;
+  color: white;
 }
 
-.sub__menu>li:hover {
-    color: #7fba00;
+.sub__menu > li:hover {
+  color: #7fba00;
 }
 
-ul.language__and__currency__ul>li:hover .sub__menu {
-    display: block;
-    position: absolute;
+ul.language__and__currency__ul > li:hover .sub__menu {
+  display: block;
+  position: absolute;
 }
 
 /* 2.2 logo */
-.top__nav__logo {}
+.top__nav__logo {
+}
 
-.top__nav__logo>a>img {
-    width: 100%;
+.top__nav__logo > a > img {
+  width: 100%;
 }
 
 /* 2.3 user login search */
 .user__login__search {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 
-    width: 40%;
+  width: 40%;
+  position: relative;
 }
 
 ul.user__login__search__ul {
-    display: flex;
+  display: flex;
 }
 
-ul.user__login__search__ul>li {
-    padding: 0 0 0 24px;
-    cursor: pointer;
-    transition: all .35s;
+ul.user__login__search__ul > li {
+  padding: 0 0 0 24px;
+  cursor: pointer;
+  transition: all 0.35s;
 }
 
-ul.user__login__search__ul>li:hover {
-    color: #7fba00;
+ul.user__login__search__ul > li:hover {
+  color: #7fba00;
 }
 
 /* 3. Main nav */
-.main__nav {}
+.main__nav {
+}
 
-nav.main__navigation__nav {}
+nav.main__navigation__nav {
+}
 
 /* 3.1 main menu */
 .main__navigation__nav ul.main__menu {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
 
-ul.main__menu>li {
-    padding: 0 20px;
+ul.main__menu > li {
+  padding: 0 20px;
 }
 
-ul.main__menu>li>a {
-    text-decoration: none;
-    color: black;
+ul.main__menu > li > a {
+  text-decoration: none;
+  color: black;
+}
+/* cart */
+.cart__container {
+  position: absolute;
+  width: 338px;
+  background: #666666;
+  top: 28px;
+  border-radius: 6px;
+  opacity: 0.9;
+  overflow: hidden;
+  height: 0;
+  transition: all 5s ease 0s;
+}
+
+.cart__container.open {
+  height: auto;
+  overflow: visible;
+}
+
+.cart__wrapper {
+  display: flex;
+  padding-bottom: 20px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+.cart__image {
+  width: 30%;
+}
+.cart__image img {
+  width: 80%;
+  vertical-align: middle;
+}
+.cart__info {
+  width: 65%;
+  display: flex;
+  color: white;
+}
+.cart__info__name {
+  width: 50%;
+}
+.cart__info__quantity {
+  width: 10%;
+}
+.cart__info__price {
+  width: 40%;
+}
+.cart__button__remove {
+  width: 5%;
+}
+.cart__button__remove button {
+  width: 21px;
+  border-radius: 50%;
+  border: none;
+  vertical-align: middle;
+  color: white;
+  background: red;
+  padding: 3px;
+}
+.cart__button__remove button:hover {
+  background-color: #a04e4a;
+  cursor: pointer;
+}
+.sub__total__container {
+  padding: 0 20px;
+}
+.sub__total__content {
+  display: flex;
+  padding: 20px 0;
+}
+.sub__total__info {
+  width: 70%;
+  text-align: right;
+  color: white;
+}
+.sub__total__price {
+  width: 30%;
+  text-align: right;
+  color: white;
+}
+.total__button__wrapper {
+  text-align: right;
+  padding: 0 20px 20px 0;
+}
+.total__button__wrapper button {
+  padding: 10px 14px;
+  color: white;
+  background: #888888;
+  border: 0;
+  border-radius: 14px;
+}
+.total__button__wrapper button:hover {
+  cursor: pointer;
+  background: #7fba00;
+  transition: all 0.5s;
+}
+.total__button__wrapper .active {
+  background: #7fba00;
+}
+.total__button__wrapper .active:hover {
+  background: #888888;
 }
