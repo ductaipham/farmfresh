@@ -1,0 +1,91 @@
+td {
+  padding: 12px;
+}
+table {
+  width: 100%;
+}
+.image-wrapper {
+  text-align: center;
+}
+.image-wrapper img {
+  width: 70%;
+}
+input {
+  width: 29px;
+  height: 30px;
+}
+button {
+  width: 35px;
+  height: 30px;
+  border: none;
+}
+.fa-refresh::before {
+  content: "\f021";
+}
+.fa-times-circle::before {
+  content: "\f057";
+}
+.button-update {
+  background: #4d4d4d;
+  color: white;
+  position: relative;
+}
+.button-remove {
+  background: #d2322d;
+  color: white;
+}
+.button-update:hover,
+.button-remove:hover {
+  cursor: pointer;
+  background: #7fba00;
+}
+.note-update {
+  height: 29px;
+  width: 69px;
+  position: absolute;
+  background: #4d4d4d;
+  padding: 5px;
+  top: -119%;
+  left: -49%;
+}
+.fa-arrow-down {
+  color: #4d4d4d;
+}
+.sub-total-wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+.sub-total-wrapper tr {
+  text-align: right;
+}
+.table-left {
+  width: 70%;
+}
+.table-right {
+  width: 30%;
+}
+.button-cart-wrapper {
+  display: flex;
+  margin-top: 25px;
+}
+.button-cart-shopping,
+.button-cart-checkout {
+  width: 50%;
+}
+.button-cart-checkout {
+  text-align: right;
+}
+.button-cart-checkout a,
+.button-cart-shopping a {
+  border: 1px;
+  padding: 11px 15px;
+  background: black;
+  color: white;
+  border-radius: 28px;
+  text-decoration: none;
+}
+.button-cart-checkout a:hover,
+.button-cart-shopping a:hover {
+  background: #7fba00;
+  cursor: pointer;
+}
