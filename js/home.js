@@ -38,19 +38,19 @@ if (categoriesListElement) {
 // See more btn
 const seeMoreBtnElement = document.getElementById('seeMoreBtn');
 const productListElement = document.getElementById('productList');
-const seeMoreElement = document.querySelector('.see__more__btn');
-const hideMoreElement = document.querySelector('.hide__more__btn');
+const seeMoreElement = document.querySelector('.see-more__btn');
+const hideMoreElement = document.querySelector('.hide-more__btn');
 const hideMoreBtnElement = document.getElementById('hideMoreBtn');
 if (seeMoreBtnElement && productListElement && seeMoreElement) {
     seeMoreBtnElement.addEventListener('click', e => {
-        productListElement.classList.remove('product__list__none');
-        seeMoreElement.classList.toggle('see__more__btn__none');
-        hideMoreElement.classList.remove('hide__more__btn__none');
+        productListElement.classList.remove('product-list__none');
+        seeMoreElement.classList.toggle('see-more__btn--none');
+        hideMoreElement.classList.remove('hide-more__btn--none');
     });
 
     hideMoreBtnElement.addEventListener('click', e => {
-        productListElement.classList.toggle('product__list__none');
-        seeMoreElement.classList.remove('see__more__btn__none');
-        hideMoreElement.classList.toggle('hide__more__btn__none');
+        productListElement.classList.toggle('product-list__none');
+        seeMoreElement.classList.remove('see-more__btn--none');
+        hideMoreElement.classList.toggle('hide-more__btn--none');
     });
 }

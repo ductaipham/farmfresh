@@ -15,267 +15,271 @@
 */
 
 /* 1. Hero banner */
-.hero__banner {}
-
-.main__slider {
-    width: 100%;
+.hero-banner {
 }
 
-.main__slider>img {
-    width: 100%;
+.hero-banner__main {
+  width: 100%;
+}
+
+.hero-banner__main > img {
+  width: 100%;
 }
 
 /* 2.Main Content */
-.main__content {}
-
-.main__content__container {
-    /* display: flex; */
+.main-content {
 }
 
+.main-content__container {
+  /* display: flex; */
+}
 
 /* 2.1.Categories List */
-.categories__list__container {
-    padding: 20px 0;
+.categories-list__container {
+  padding: 20px 0;
 }
 
-.categories__list__container ul.categories__list {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+.categories-list__container ul.categories-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-ul.categories__list>li {
-    padding: 4px 20px;
-    margin: 0 10px;
+ul.categories-list > li {
+  padding: 4px 20px;
+  margin: 0 10px;
 
-    border-radius: 50px;
-    border: 2px solid #f1f1f1;
-    transition: all .35s;
+  border-radius: 50px;
+  border: 2px solid #f1f1f1;
+  transition: all 0.35s;
 }
 
-ul.categories__list>li:hover {
-    background-color: #7fba00;
+ul.categories-list > li:hover {
+  background-color: #7fba00;
 }
 
-ul.categories__list>li:hover>a {
-    color: white;
+ul.categories-list > li:hover > a {
+  color: white;
 }
 
-ul.categories__list>li.active {
-    background-color: #7fba00;
+ul.categories-list > li.active {
+  background-color: #7fba00;
 }
 
-ul.categories__list>li.active>a {
-    color: white;
+ul.categories-list > li.active > a {
+  color: white;
 }
 
-ul.categories__list>li>a {
-    text-decoration: none;
-    color: black;
+ul.categories-list > li > a {
+  text-decoration: none;
+  color: black;
 }
 
 /* 2.2 Product List */
-.product__list {}
-
-.product__list.product__list__none {
-    display: none;
+.product-list {
 }
 
-.product__list__container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-
-    margin: 0 -8px;
+.product-list.product-list__none {
+  display: none;
 }
 
-.product__list__container .product__item {
-    width: 25%;
-    padding: 0 8px;
-    margin: 20px 0;
-    cursor: pointer;
-    transition: all .35s;
+.product-list__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  margin: 0 -8px;
 }
 
-.product__item>.product__item__image>img {
-    width: 100%;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+.product-list__container .product-item {
+  width: 25%;
+  padding: 0 8px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.35s;
 }
 
-.product__item__content {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+.product-item > .product-item__image > img {
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
-.price__line__through {
-    text-decoration: line-through;
-    color: gray;
+.product-item__content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.price--line-through {
+  text-decoration: line-through;
+  color: gray;
 }
 
 /* 2.2.1 star rank */
-ul.star__rank {
-    display: flex;
-    justify-content: center;
+ul.star-rank {
+  display: flex;
+  justify-content: center;
 }
 
-ul.star__rank>li {
-    color: yellow;
+ul.star-rank > li {
+  color: yellow;
 }
 
-.product__item:hover ul.star__rank {
-    display: none;
+.product-item:hover ul.star-rank {
+  display: none;
 }
 
 /* 2.2.2 add to cart button */
-.add__to__cart__btn {
-    display: none;
-    text-transform: uppercase;
-    text-decoration: none;
+.add-to-cart__btn {
+  display: none;
+  text-transform: uppercase;
+  text-decoration: none;
 
-    color: #7fba00;
+  color: #7fba00;
 }
 
-.product__item:hover .add__to__cart__btn {
-    display: block;
+.product-item:hover .add-to-cart__btn {
+  display: block;
 }
 
 /* 3. Customer review */
 .customer__review {
-    padding: 48px 0;
+  padding: 48px 0;
 }
 
-.customer__review__container {}
+.customer__review__container {
+}
 
 /* 3.1 cutomer review title */
 .customer__review__container .customer__review__title {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 /* 3.2 review main */
 .review__container {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    margin: 0 -16px;
-    padding: 56px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 -16px;
+  padding: 56px 0;
 }
 
 .review__container .review__description {
-    width: 50%;
-    padding: 0 16px;
-    position: relative;
+  width: 50%;
+  padding: 0 16px;
+  position: relative;
 }
 
 /* 3.2.1 review top */
 .review__top {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
 }
 
 .review__top__image {
-    width: 30%;
-    padding: 0 16px;
+  width: 30%;
+  padding: 0 16px;
 }
 
-.review__top__image>img {
-    width: 89%;
-    border-radius: 20px;
+.review__top__image > img {
+  width: 89%;
+  border-radius: 20px;
 }
 
-.customer__name {}
+.customer__name {
+}
 
 .customer__position {
-    color: #7fba00;
+  color: #7fba00;
 }
 
 .review__top__title {
-    width: 70%;
+  width: 70%;
 }
 
 /* 3.2.2 review bottom */
 .review__bottom {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f1f1f1;
-    padding: 16px 0;
-    margin: 58px 0 0 0;
-    border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 16px 0;
+  margin: 58px 0 0 0;
+  border-radius: 12px;
 }
 
 .review__bottom__icon {
-    width: 30%;
-    padding: 64px 0 0 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+  width: 30%;
+  padding: 64px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.review__bottom__icon>img {
-    width: 25%;
+.review__bottom__icon > img {
+  width: 25%;
 }
 
 .review__bottom .review__bottom__description {
-    width: 68%;
+  width: 68%;
 }
 
 /* 4. See more btn */
-.see__more__btn {
-    display: flex;
-    justify-content: center;
+.see-more__btn {
+  display: flex;
+  justify-content: center;
 }
 
-.see__more__btn.see__more__btn__none {
-    display: none;
+.see-more__btn.see-more__btn--none {
+  display: none;
 }
 
-.see__more__btn>p {
-    border: 2px solid #f1f1f1;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all .35s;
-    width: 120px;
-    text-align: center;
-    /* background-color: #7fba00; */
+.see-more__btn > p {
+  border: 2px solid #f1f1f1;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.35s;
+  width: 120px;
+  text-align: center;
+  /* background-color: #7fba00; */
 }
 
-.see__more__btn>p:hover {
-    color: #fff;
-    background-color: #7fba00;
+.see-more__btn > p:hover {
+  color: #fff;
+  background-color: #7fba00;
 }
 
 /* 5. Hide more btn */
-.hide__more__btn {
-    display: flex;
-    justify-content: center;
+.hide-more__btn {
+  display: flex;
+  justify-content: center;
 }
 
-.hide__more__btn.hide__more__btn__none {
-    display: none;
+.hide-more__btn.hide-more__btn--none {
+  display: none;
 }
 
-.hide__more__btn>p {
-    border: 2px solid #f1f1f1;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: all .35s;
-    width: 120px;
-    text-align: center;
-    /* background-color: #7fba00; */
+.hide-more__btn > p {
+  border: 2px solid #f1f1f1;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.35s;
+  width: 120px;
+  text-align: center;
+  /* background-color: #7fba00; */
 }
 
-.hide__more__btn>p:hover {
-    color: #fff;
-    background-color: #7fba00;
+.hide-more__btn > p:hover {
+  color: #fff;
+  background-color: #7fba00;
 }
