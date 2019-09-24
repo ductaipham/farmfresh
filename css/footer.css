@@ -24,7 +24,7 @@ footer {
   flex-flow: column nowrap;
 }
 
-.footer__item > h1 {
+.footer__item>h1 {
   text-align: center;
 }
 
@@ -35,7 +35,7 @@ ul.store__item {
   align-items: flex-start;
 }
 
-ul.store__item > li {
+ul.store__item>li {
   padding: 4px 0;
 }
 
@@ -44,24 +44,24 @@ ul.store__item > li {
   position: relative;
 }
 
-.footer__input > input {
+.footer__input>input {
   width: 100%;
   border-radius: 20px;
   padding: 8px 12px;
   border: none;
 }
 
-.footer__input > i {
+.footer__input>i {
   position: absolute;
   right: 8px;
   top: 32px;
 }
 
-ul.list__icon__footer {
+ul.list-icon__footer {
   display: flex;
 }
 
-ul.list__icon__footer > li {
+ul.list-icon__footer>li {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,16 +71,16 @@ ul.list__icon__footer > li {
   background-color: white;
 }
 
-ul.list__icon__footer > li > a {
+ul.list-icon__footer>li>a {
   text-decoration: none;
   color: #696969;
 }
 
-.footer__bottom {
+.footer-bottom {
   padding: 48px 0 0 0;
 }
 
-.footer__bottom__container {
+.footer-bottom__container {
   border-top: 1px solid #d3d3d3;
   display: flex;
   padding: 24px 0 0 0;
@@ -88,7 +88,7 @@ ul.list__icon__footer > li > a {
   align-items: center;
 }
 
-ul.bank__card__list__container {
+ul.bank-card__list__container {
   display: flex;
   width: 200px;
   justify-content: space-between;

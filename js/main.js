@@ -1,11 +1,7 @@
 "use strict";
 
-window.onscroll = function() {
-  scrollToTop();
-};
-
 // hàm scroll
-function scrollToTop() {
+const scrollToTop = () => {
   if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
     document.getElementById("scrollToTopBtn").style.opacity = "1";
   } else {
@@ -13,10 +9,14 @@ function scrollToTop() {
   }
 }
 
-document.getElementById("scrollToTopBtn").addEventListener("click", function() {
+document.getElementById("scrollToTopBtn").addEventListener("click", function () {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 });
+
+window.onscroll = () => {
+  scrollToTop();
+};
 
 //cart
 const cartItem = document.querySelector("#clickCart");

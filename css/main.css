@@ -33,13 +33,13 @@ ul {
 }
 
 /* 3. scroll to top button */
-.scroll__to__top {
+.scroll-to-top {
   position: fixed;
   right: 16px;
   bottom: 16px;
 }
 
-.scroll__to__top .scroll__to__top__btn {
+.scroll-to-top .scroll-to-top__btn {
   padding: 4px 12px;
   cursor: pointer;
   border-radius: 50%;
