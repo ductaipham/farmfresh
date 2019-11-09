@@ -1,0 +1,84 @@
+.checkout__wrapper {
+  width: 100%;
+}
+
+.chekout__title {
+  padding: 10px 0;
+}
+
+.step {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.btn__step {
+  padding: 10px;
+  color: #444;
+  width: 100%;
+  background-color: #f8f8f8;
+  text-align: left;
+  border: 1px solid #e5e5e5;
+  font-weight: 600;
+}
+
+.collapse.border__full {
+  border: 1px solid #e5e5e5;
+}
+
+.step1__container {
+  display: flex;
+  padding: 24px;
+  margin: 0 -16px;
+}
+
+.new__customer {
+  width: 50%;
+  padding: 0 16px;
+}
+
+.returning__customer {
+  width: 50%;
+  padding: 0 16px;
+}
+
+.returning__customer input {
+  width: 100%;
+  padding: 4px 8px;
+  border: 1px solid #e5e5e5;
+}
+
+/* ***************************** */
+.step2__container {
+  display: flex;
+  padding: 24px;
+  margin: 0 -16px;
+}
+
+.personal__detail {
+  width: 50%;
+  padding: 0 16px;
+}
+
+.your__address {
+  width: 50%;
+  padding: 0 16px;
+}
+
+.step2__btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.step2__btn > a {
+  padding: 8px 16px;
+  background-color: #4d4d4d;
+  /* border: 1px solid #4d4d4d; */
+  color: #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  transition: all 0.35s;
+}
+
+.step2__btn > a:hover {
+  background-color: #7fba00;
+}
