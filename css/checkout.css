@@ -48,9 +48,8 @@
 }
 
 /* ***************************** */
-.step2__container {
+.step2__wrapper {
   display: flex;
-  padding: 24px;
   margin: 0 -16px;
 }
 
@@ -59,17 +58,19 @@
   padding: 0 16px;
 }
 
+
 .your__address {
   width: 50%;
   padding: 0 16px;
 }
 
 .step2__btn {
+  /* padding: 0 24px; */
   display: flex;
   justify-content: flex-end;
 }
 
-.step2__btn > a {
+.step2__btn>a {
   padding: 8px 16px;
   background-color: #4d4d4d;
   /* border: 1px solid #4d4d4d; */
@@ -79,6 +80,48 @@
   transition: all 0.35s;
 }
 
-.step2__btn > a:hover {
+.step2__btn>a:hover {
   background-color: #7fba00;
+}
+
+.personal__detail>div>input,
+.your__address>div>input,
+.your__address>div>select {
+  width: 100%;
+  padding: 4px 8px;
+  border: 1px solid #e5e5e5;
+}
+
+.input__personal>p>span {
+  color: red;
+}
+
+/* *************** */
+
+.add__comment>textarea {
+  width: 100%;
+}
+
+.step2__container,
+.step4__container,
+.step3__container,
+.step5__container {
+  padding: 24px;
+}
+
+/*  */
+
+.step5__container>table {
+  width: 100%;
+
+}
+
+table tr td,
+table tr th {
+  padding: 4px 8px;
+  border: 1px solid #e5e5e5;
+}
+
+table tr td {
+  text-align: right;
 }

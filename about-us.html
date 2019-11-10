@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/6b4959f5c2.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -15,13 +15,15 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/category.css" />
-    <link rel="stylesheet" href="css/checkout.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/footer.css">
-
+    <!-- <link rel="stylesheet" href="libs/Hover-master/css/hover.css"> -->
 </head>
 
 <body>
@@ -57,8 +59,15 @@
 
                     <div class="user-login-search">
                         <ul class="user-login-search__ul">
-                            <li><i class="fas fa-search"></i></li>
-                            <li class="user"><i class="fas fa-user"></i></li>
+                            <li class="search__header"><i class="fas fa-search"></i>
+                                <div class="sub__input"><input type="text"></div>
+                            </li>
+                            <li class="user"><i class="fas fa-user"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                </ul>
+                            </li>
                             <li id="clickCart"><i class="fas fa-shopping-cart"></i><span class="cart__quantity">0</span>
                             </li>
                         </ul>
@@ -148,8 +157,7 @@
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb non-bg">
-                        <li class="breadcrumb-item"><a class="color-green" href="index.html">Home</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Category</li>
+                        <li class="breadcrumb-item"><a class="color-green" href="about-us.html">About Us</a></li>
 
                     </ol>
                 </nav>
@@ -324,330 +332,101 @@
                     </div>
                 </div>
 
-                <div class="checkout__wrapper">
-                    <div class="checkout">
-                        <div class="chekout__title">
-                            <h3>CHECKOUT</h3>
+                <div class="about__us__wrapper">
+                    <div class="about__us__container">
+                        <div class="blog__titles">
+                            <h3>ABOUT US</h3>
                         </div>
 
-                        <div class="checkout__tag__wrapper">
-                            <div class="step" id="step1">
-                                <!-- Collapse buttons -->
-                                <div>
-                                    <button class="btn btn__step" type="button" data-toggle="collapse"
-                                        data-target="#collapseExample" aria-expanded="false"
-                                        aria-controls="collapseExample">
-                                        Step 1: Checkout Options
-                                    </button>
-                                </div>
-                                <!-- / Collapse buttons -->
-
-                                <!-- Collapsible element -->
-                                <div class="collapse border__full" id="collapseExample">
-                                    <div class="mt-3">
-                                        <div class="step1__container">
-                                            <div class="new__customer">
-                                                <div class="new__customer__title">
-                                                    <h4>New Customer</h4>
-                                                </div>
-
-                                                <div class="option">
-                                                    <p>Checkout Options</p>
-                                                    <div>
-                                                        <input id="registerAccout" type="radio" name="user">
-                                                        <label for="registerAccout">Register Account</label>
-                                                    </div>
-                                                    <div>
-                                                        <input id="guestCheckout" type="radio" name="user">
-                                                        <label for="guestCheckout">Guest Checkout</label>
-                                                    </div>
-
-                                                    <div>
-                                                        <p>
-                                                            By creating an account you will be able to shop faster, be
-                                                            up
-                                                            to date on an order's status, and keep track of the orders
-                                                            you have previously made.
-                                                        </p>
-                                                    </div>
-
-                                                    <div>
-                                                        <a href="">Continue</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="returning__customer">
-                                                <div class="returning__customer__title">
-                                                    <h4>Returning Customer</h4>
-                                                </div>
-                                                <div>
-                                                    <p>I am a returning customer</p>
-                                                </div>
-
-                                                <div>
-                                                    <p>Email</p>
-                                                    <input type="text" placeholder="E-Mail">
-                                                </div>
-
-                                                <div>
-                                                    <p>Password</p>
-                                                    <input type="password" placeholder="Password">
-                                                </div>
-
-                                                <div>
-                                                    <a href="">Forgotten Password</a>
-                                                </div>
-                                                <div>
-                                                    <a href="">Login</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                        <div class="about__item__wrapper">
+                            <div class="about__item__container">
+                                <div class="about__item row" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="500">
+                                    <div class="about__item__image">
+                                        <img src="img/vanchuyen01-8391.png" alt="">
+                                    </div>
+                                    <div class="about__item__content">
+                                        <h5>HANDLING</h5>
+                                        <p>Clean product after havesting with modern technology</p>
                                     </div>
                                 </div>
-                                <!-- / Collapsible element -->
-                            </div>
 
-                            <div class="step" id="step2">
-                                <!-- Collapse buttons -->
-                                <div>
-                                    <button class="btn btn__step" type="button" data-toggle="collapse"
-                                        data-target="#collapseExample1" aria-expanded="false"
-                                        aria-controls="collapseExample1">
-                                        Step 2: Account & Billing Details
-                                    </button>
-                                </div>
-                                <!-- / Collapse buttons -->
-
-                                <!-- Collapsible element -->
-                                <div class="collapse" id="collapseExample1">
-                                    <div class="mt-3">
-                                        <div class="step2__container">
-                                            <div class="step2__wrapper">
-                                                <div class="personal__detail">
-                                                    <div class="personal__detail__title">
-                                                        <h4>Personal Details</h4>
-                                                    </div>
-
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;First Name</p>
-                                                        <input type="text">
-                                                    </div>
-
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;Last Name</p>
-                                                        <input type="text">
-                                                    </div>
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;E-Mail</p>
-                                                        <input type="text">
-                                                    </div>
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;Telephone</p>
-                                                        <input type="text">
-                                                    </div>
-                                                </div>
-
-                                                <div class="your__address">
-                                                    <div class="your__address__title">
-                                                        <h4>Your Address</h4>
-                                                    </div>
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;Address</p>
-                                                        <input type="text">
-                                                    </div>
-
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;City</p>
-                                                        <input type="text">
-                                                    </div>
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;Post Code</p>
-                                                        <input type="text">
-                                                    </div>
-
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;Country</p>
-                                                        <select name="" id="">
-                                                            <option value="">An Giang</option>
-                                                        </select>
-                                                    </div>
-
-                                                    <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;Ward/District</p>
-                                                        <select name="" id="">
-                                                            <option value="">---Please Select---</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="address__agree">
-                                                <input type="checkbox" id="agreement">
-                                                <label for="agreement">
-                                                    My delivery and billing addresses are the same.
-                                                </label>
-                                            </div>
-
-                                            <div class="step2__btn">
-                                                <a href="">Continue</a>
-                                            </div>
-                                        </div>
+                                <div class="about__item row" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="800">
+                                    <div class="about__item__image">
+                                        <img src="img/baoquan-235.png" alt="">
+                                    </div>
+                                    <div class="about__item__content">
+                                        <h5>STORAGE</h5>
+                                        <p>Store products in cold storage at suitable temperature and humidity
+                                            conditions</p>
                                     </div>
                                 </div>
-                                <!-- / Collapsible element -->
-                            </div>
 
-                            <div class="step" id="step3">
-                                <!-- Collapse buttons -->
-                                <div>
-                                    <button class="btn btn__step" type="button" data-toggle="collapse"
-                                        data-target="#collapseExample2" aria-expanded="false"
-                                        aria-controls="collapseExample2">
-                                        Step 3: Delivery Method
-                                    </button>
-                                </div>
-                                <!-- / Collapse buttons -->
-
-                                <!-- Collapsible element -->
-                                <div class="collapse" id="collapseExample2">
-                                    <div class="mt-3">
-                                        <div class="step3__container">
-                                            <div class="please__select">
-                                                <p>Please select the preferred shipping method to use on this order.</p>
-                                            </div>
-
-                                            <div class="flat__rate">
-                                                <h6>Flat rate</h6>
-                                            </div>
-
-                                            <div class="flat__rate__check">
-                                                <input type="radio" name="" id="checkRate" checked="checked">
-                                                <label for="checkRate">
-                                                    Flat Shipping Rate - $8.00
-                                                </label>
-                                            </div>
-
-                                            <div class="add__comment">
-                                                <h6>Add Comments About Your Order</h6>
-                                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                                            </div>
-                                            <div class="step2__btn">
-                                                <a href="">Continue</a>
-                                            </div>
-                                        </div>
+                                <div class="about__item row" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="1100">
+                                    <div class="about__item__image">
+                                        <img src="img/donggoi-2499.png" alt="">
+                                    </div>
+                                    <div class="about__item__content">
+                                        <h5>PACKING</h5>
+                                        <p>Packed according to export standard,ensuring the freshness to customers</p>
                                     </div>
                                 </div>
-                                <!-- / Collapsible element -->
-                            </div>
 
-                            <div class="step" id="step4">
-                                <!-- Collapse buttons -->
-                                <div>
-                                    <button class="btn btn__step" type="button" data-toggle="collapse"
-                                        data-target="#collapseExample3" aria-expanded="false"
-                                        aria-controls="collapseExample3">
-                                        Step 4: Payment Method
-                                    </button>
-                                </div>
-                                <!-- / Collapse buttons -->
-
-                                <!-- Collapsible element -->
-                                <div class="collapse" id="collapseExample3">
-                                    <div class="mt-3">
-                                        <div class="step4__container">
-                                            <div>
-                                                <p>Please select the preferred payment method to use on this order.</p>
-                                            </div>
-
-                                            <div>
-                                                <input type="radio" name="" id="cashOnDelivery" checked="checked">
-                                                <label for="cashOnDelivery">Cash On Delivery</label>
-                                            </div>
-
-                                            <div class="add__comment">
-                                                <h6>Add Comments About Your Order</h6>
-                                                <textarea name="" id="" cols="30" rows="10"></textarea>
-                                            </div>
-
-                                            <div class="step2__btn">
-                                                <a href="">Continue</a>
-                                            </div>
-                                        </div>
+                                <div class="about__item row" data-aos="fade-left" data-aos-anchor="#example-anchor"
+                                    data-aos-offset="500" data-aos-duration="1400">
+                                    <div class="about__item__image">
+                                        <img src="img/vanchuyen-7552.png" alt="">
+                                    </div>
+                                    <div class="about__item__content">
+                                        <h5>TRANSPORT</h5>
+                                        <p>Truck and container system ready to meet the transport needs everyday</p>
                                     </div>
                                 </div>
-                                <!-- / Collapsible element -->
                             </div>
+                        </div>
 
-                            <div class="step" id="step5">
-                                <!-- Collapse buttons -->
-                                <div>
-                                    <button class="btn btn__step" type="button" data-toggle="collapse"
-                                        data-target="#collapseExample4" aria-expanded="false"
-                                        aria-controls="collapseExample4">
-                                        Step 5: Confirm Order
-                                    </button>
-                                </div>
-                                <!-- / Collapse buttons -->
-
-                                <!-- Collapsible element -->
-                                <div class="collapse" id="collapseExample4">
-                                    <div class="mt-3">
-                                        <div class="step5__container">
-                                            <table>
-                                                <tr>
-                                                    <th>Product Name</th>
-                                                    <th>Model</th>
-                                                    <th>Quantity</th>
-                                                    <th>Unit Price</th>
-                                                    <th>Total</th>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Accusantium Doloremque</td>
-                                                    <td>Product 21</td>
-                                                    <td>1</td>
-                                                    <td>$128.00</td>
-                                                    <td>$128.00</td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td colspan="4">Sub-Total:</td>
-                                                    <td>$105.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4">Flat Shipping Rate:</td>
-                                                    <td>$5.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4">Eco Tax (-2.00):</td>
-                                                    <td>$4.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4">VAT (20%):</td>
-                                                    <td>$22.00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="4">Total:</td>
-                                                    <td>$136.00</td>
-                                                </tr>
-                                            </table>
-
-                                            <div class="step2__btn">
-                                                <a href="">Confirm Order</a>
-                                            </div>
-                                        </div>
+                        <div class="teammates__wrapper">
+                            <div class="teamates__title" data-aos="zoom-out-left" data-aos-duration="600">
+                                <h3>OUR TEAMATES</h3>
+                            </div>
+                            <div class="teammates__container row">
+                                <div class="teamate__item col-lg-4" data-aos="fade-up"
+                                    data-aos-anchor-placement="center-center" data-aos-duration="800">
+                                    <div class="teamate__image">
+                                        <img src="img/46499158_906532309541687_735503026202083328_n.jpg" alt="">
+                                    </div>
+                                    <div class="teamate__content">
+                                        <h4>Nguyễn Huy Cường</h4>
                                     </div>
                                 </div>
-                                <!-- / Collapsible element -->
-                            </div>
 
+                                <div class="teamate__item col-lg-4" data-aos="fade-up"
+                                    data-aos-anchor-placement="center-center" data-aos-duration="1200">
+                                    <div class="teamate__image">
+                                        <img src="img/72849683_2511181802448117_8010999878404538368_o.jpg" alt="">
+                                    </div>
+                                    <div class="teamate__content">
+                                        <h4>Phạm Đức Tài</h4>
+                                    </div>
+                                </div>
+
+                                <div class="teamate__item col-lg-4" data-aos="fade-up"
+                                    data-aos-anchor-placement="center-center" data-aos-duration="1600">
+                                    <div class="teamate__image">
+                                        <img src="img/74285211_1108899705982930_830203915457789952_o.jpg" alt="">
+                                    </div>
+                                    <div class="teamate__content">
+                                        <h4>Huỳnh Trọng Nhật</h4>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
 
     </main>
 
@@ -762,5 +541,6 @@
         AOS.init();
     </script>
 </body>
+
 
 </html>

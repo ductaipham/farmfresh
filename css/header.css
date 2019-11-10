@@ -58,9 +58,20 @@ ul.language-currency__ul>li {
 .sub-menu>li {
     cursor: pointer;
     color: white;
+    transition: all .35s;
 }
 
 .sub-menu>li:hover {
+    color: #7fba00;
+}
+
+.sub-menu>li>a {
+    text-decoration: none;
+    color: white;
+    transition: all .35s;
+}
+
+.sub-menu>li>a:hover {
     color: #7fba00;
 }
 
@@ -68,6 +79,8 @@ ul.language-currency__ul>li:hover .sub-menu {
     display: block;
     position: absolute;
 }
+
+
 
 /* 2.2 logo */
 .top-nav__logo {}
@@ -87,6 +100,7 @@ ul.language-currency__ul>li:hover .sub-menu {
 
 ul.user-login-search__ul {
     display: flex;
+    position: relative;
 }
 
 ul.user-login-search__ul>li {
@@ -97,6 +111,25 @@ ul.user-login-search__ul>li {
 
 ul.user-login-search__ul>li:hover {
     color: #7fba00;
+}
+
+.user:hover .sub-menu {
+    display: block;
+    position: absolute;
+}
+
+.sub__input {
+    display: none;
+}
+
+.sub__input>input {
+    border: 1px solid #e5e5e5;
+    padding: 4px 8px;
+}
+
+.search__header:hover .sub__input {
+    display: block;
+    position: absolute;
 }
 
 /* 3. Main nav */

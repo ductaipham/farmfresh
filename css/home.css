@@ -337,3 +337,8 @@ ul.star-rank>li {
 .read__more__blog {
     padding: 8px 0;
 }
+
+.read__more__blog>a {
+    color: #7fba00;
+    text-decoration: none;
+}
