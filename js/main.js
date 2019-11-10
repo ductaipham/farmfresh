@@ -36,7 +36,6 @@ if (cartItem && cartContainer) {
   });
 }
 
-"use strict";
 const productItem = document.querySelectorAll(".product-item");
 for (let i = 0; i < productItem.length; i++) {
   productItem[i].addEventListener("click", () => {
@@ -44,3 +43,13 @@ for (let i = 0; i < productItem.length; i++) {
     // console.log("a");
   });
 }
+
+const viewCartButtonHeader = document.querySelector('#viewCartHeader');
+const checkoutButtonHeader = document.querySelector('#checkoutButtonHeader');
+viewCartButtonHeader.addEventListener('click', (e) => {
+  window.location.href = 'cart-page.html';
+});
+
+checkoutButtonHeader.addEventListener('click', (e) => {
+  window.location.href = 'checkout.html';
+});
