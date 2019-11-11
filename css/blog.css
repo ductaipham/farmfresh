@@ -1,3 +1,7 @@
+.blog__wrapper {
+    width: 75%;
+}
+
 .blog__titles {
     padding: 12px 0;
 }

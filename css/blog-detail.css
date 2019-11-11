@@ -15,5 +15,15 @@
 .comment__container textarea {
     width: 100%;
     border: 1px solid #e5e5e5;
-    padding: 4px 12px;
+    padding: 6px 12px;
+    border-radius: .35rem;
+}
+
+.add__comment>h6 {
+    font-weight: 600;
+}
+
+.blog__detail__comment {
+    border-top: 1px solid #e5e5e5;
+    padding: 16px 0;
 }

@@ -1,7 +1,14 @@
 .header__admin {
   height: 80px;
-  background-color: aqua;
+  background: url(../img/header-bkg.jpg);
   padding: 8px 0;
+}
+
+input,
+select,
+option {
+  padding: 6px 12px;
+  border: 1px solid #e5e5e5;
 }
 
 .full__height {
@@ -23,10 +30,27 @@
 .admin__role {
   display: flex;
   justify-content: flex-end;
+  position: relative;
+}
+
+.admin__role>div:hover .admin__user__menu {
+  display: block;
 }
 
 .admin__user__menu {
   display: none;
+  position: absolute;
+  padding: 4px 8px;
+  background-color: #666666;
+  z-index: 10;
+  border-radius: .35rem;
+  width: 80px;
+  color: white;
+  cursor: pointer;
+}
+
+.admin__user__menu:hover {
+  color: #7fba00;
 }
 
 /* ********************************* */
@@ -37,7 +61,7 @@
 
 .tab {
   float: left;
-  border: 1px solid #ccc;
+  border: 1px solid #e5e5e5;
   background-color: #f1f1f1;
 
   height: 100%;
@@ -51,6 +75,7 @@
 .content__admin.none__padding,
 .col-lg-4.none__padding {
   padding: 0;
+  border: 1px solid #e5e5e5;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -83,7 +108,7 @@
   display: none;
   float: left;
   padding: 0px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #e5e5e5;
   width: 100%;
   border-left: none;
   height: 100%;

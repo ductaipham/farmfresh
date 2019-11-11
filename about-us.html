@@ -122,8 +122,8 @@
                                 </div>
                             </div>
                             <div class="total-button__wrapper">
-                                <button class="active">View Cart</button>
-                                <button>Checkout</button>
+                                <button id="viewCartHeader" class="active">View Cart</button>
+                                <button id="checkoutButtonHeader">Checkout</button>
                             </div>
                         </div>
                     </div>
@@ -136,12 +136,31 @@
             <div class="container">
                 <nav class="main-nav__container">
                     <ul class="main-nav__menu">
-                        <li><a href="category.html">Organic Food</a></li>
+                        <li><a href="category.html">Organic Food</a>
+                            <ul class="sub__main__menu">
+                                <li><a href="category.html">Healthful Food</a></li>
+                                <li><a href="category.html">Super Food</a></li>
+                                <li><a href="category.html">Lite Food</a></li>
+                            </ul>
+                        </li>
                         <li><a href="category.html">Chemical Free</a></li>
-                        <li><a href="category.html">Fruits</a></li>
+                        <li><a href="category.html">Fruits</a>
+                            <ul class="sub__main__menu">
+                                <li><a href="category.html">Skinny Food</a></li>
+                                <li><a href="category.html">Low-calorie</a></li>
+                                <li><a href="category.html">Lite Food</a></li>
+                                <li><a href="category.html">Non-Fat</a></li>
+                                <li><a href="category.html">Peanut</a></li>
+                            </ul>
+                        </li>
                         <li><a href="category.html">Nursery</a></li>
                         <li><a href="category.html">Vegetables</a></li>
-                        <li><a href="category.html">More</a></li>
+                        <li><a href="#">More</a>
+                            <ul class="sub__main__menu">
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -158,7 +177,6 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb non-bg">
                         <li class="breadcrumb-item"><a class="color-green" href="about-us.html">About Us</a></li>
-
                     </ol>
                 </nav>
             </div>
@@ -388,7 +406,7 @@
                         </div>
 
                         <div class="teammates__wrapper">
-                            <div class="teamates__title" data-aos="zoom-out-left" data-aos-duration="600">
+                            <div class="teamates__title" data-aos="zoom-in" data-aos-duration="600">
                                 <h3>OUR TEAMATES</h3>
                             </div>
                             <div class="teammates__container row">
