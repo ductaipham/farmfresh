@@ -15,7 +15,9 @@
 */
 
 /* 1. Hero banner */
-.hero-banner {}
+.hero-banner {
+    width: 100%;
+}
 
 .hero-banner__main {
     width: 100%;

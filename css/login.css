@@ -8,6 +8,7 @@
     border: 1px solid #e5e5e5;
     width: 49%;
     padding: 15px;
+    border-radius: .35rem;
 }
 
 .new__customer__form>div,
@@ -24,8 +25,10 @@
 }
 
 .returning__customer__form input {
-    padding: 4px 8px;
+    padding: 6px 12px;
     width: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: .35rem;
 }
 
 .returning__customer__form>div.forgot>a {

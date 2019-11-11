@@ -57,8 +57,15 @@
 
                     <div class="user-login-search">
                         <ul class="user-login-search__ul">
-                            <li><i class="fas fa-search"></i></li>
-                            <li class="user"><i class="fas fa-user"></i></li>
+                            <li class="search__header"><i class="fas fa-search"></i>
+                                <div class="sub__input"><input type="text"></div>
+                            </li>
+                            <li class="user"><i class="fas fa-user"></i>
+                                <ul class="sub-menu">
+                                    <li><a href="register.html">Register</a></li>
+                                    <li><a href="login.html">Login</a></li>
+                                </ul>
+                            </li>
                             <li id="clickCart"><i class="fas fa-shopping-cart"></i><span class="cart__quantity">0</span>
                             </li>
                         </ul>
@@ -113,8 +120,8 @@
                                 </div>
                             </div>
                             <div class="total-button__wrapper">
-                                <button class="active">View Cart</button>
-                                <button>Checkout</button>
+                                <button id="viewCartHeader" class="active">View Cart</button>
+                                <button id="checkoutButtonHeader">Checkout</button>
                             </div>
                         </div>
                     </div>
@@ -127,12 +134,31 @@
             <div class="container">
                 <nav class="main-nav__container">
                     <ul class="main-nav__menu">
-                        <li><a href="category.html">Organic Food</a></li>
+                        <li><a href="category.html">Organic Food</a>
+                            <ul class="sub__main__menu">
+                                <li><a href="category.html">Healthful Food</a></li>
+                                <li><a href="category.html">Super Food</a></li>
+                                <li><a href="category.html">Lite Food</a></li>
+                            </ul>
+                        </li>
                         <li><a href="category.html">Chemical Free</a></li>
-                        <li><a href="category.html">Fruits</a></li>
+                        <li><a href="category.html">Fruits</a>
+                            <ul class="sub__main__menu">
+                                <li><a href="category.html">Skinny Food</a></li>
+                                <li><a href="category.html">Low-calorie</a></li>
+                                <li><a href="category.html">Lite Food</a></li>
+                                <li><a href="category.html">Non-Fat</a></li>
+                                <li><a href="category.html">Peanut</a></li>
+                            </ul>
+                        </li>
                         <li><a href="category.html">Nursery</a></li>
                         <li><a href="category.html">Vegetables</a></li>
-                        <li><a href="category.html">More</a></li>
+                        <li><a href="#">More</a>
+                            <ul class="sub__main__menu">
+                                <li><a href="blog.html">Blogs</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -148,8 +174,8 @@
                 </div>
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb non-bg">
-                        <li class="breadcrumb-item"><a class="color-green" href="index.html">Home</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Category</li>
+
+                        <li class="breadcrumb-item color-green" aria-current="page">Checkout</li>
 
                     </ol>
                 </nav>
@@ -354,7 +380,8 @@
                                                 <div class="option">
                                                     <p>Checkout Options</p>
                                                     <div>
-                                                        <input id="registerAccout" type="radio" name="user">
+                                                        <input id="registerAccout" type="radio" name="user"
+                                                            checked="checked">
                                                         <label for="registerAccout">Register Account</label>
                                                     </div>
                                                     <div>
@@ -371,7 +398,7 @@
                                                         </p>
                                                     </div>
 
-                                                    <div>
+                                                    <div class="step2__btn">
                                                         <a href="">Continue</a>
                                                     </div>
                                                 </div>
@@ -395,10 +422,10 @@
                                                     <input type="password" placeholder="Password">
                                                 </div>
 
-                                                <div>
+                                                <div class="forgot">
                                                     <a href="">Forgotten Password</a>
                                                 </div>
-                                                <div>
+                                                <div class="step2__btn">
                                                     <a href="">Login</a>
                                                 </div>
                                             </div>
@@ -467,16 +494,20 @@
                                                     </div>
 
                                                     <div class="input__personal">
-                                                        <p><span>*</span>&nbsp;Country</p>
-                                                        <select name="" id="">
+                                                        <p><span>*</span>&nbsp;Province</p>
+                                                        <select class="browser-default custom-select"
+                                                            aria-label="Example select with button addon" name="" id="">
+                                                            <option selected value="">---Please Select---</option>
                                                             <option value="">An Giang</option>
                                                         </select>
                                                     </div>
 
                                                     <div class="input__personal">
                                                         <p><span>*</span>&nbsp;Ward/District</p>
-                                                        <select name="" id="">
-                                                            <option value="">---Please Select---</option>
+                                                        <select class="browser-default custom-select"
+                                                            aria-label="Example select with button addon" name="" id="">
+                                                            <option selected value="">---Please Select---</option>
+                                                            <option value="">Chau Thanh</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -634,7 +665,7 @@
                                             </table>
 
                                             <div class="step2__btn">
-                                                <a href="">Confirm Order</a>
+                                                <a href="checkout-success.html">Confirm Order</a>
                                             </div>
                                         </div>
                                     </div>

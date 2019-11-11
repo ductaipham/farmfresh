@@ -283,12 +283,22 @@
     justify-content: flex-end;
 }
 
-.show__pagination>ul>li {
+.show__pagination ul>li {
     padding-left: 8px;
 }
 
-.show__pagination>ul>li>a:hover {
-    background: #7fba00;
+.show__page__container ul>li>a {
+    text-decoration: none;
+    color: #212529;
+    transition: all .35s;
+}
+
+.show__page__container ul>li>a.color-green {
+    color: #7fba00;
+}
+
+.show__pagination ul>li>a:hover {
+    color: #7fba00;
 }
 
 .show__pagination>ul>li>a {
