@@ -65,3 +65,12 @@ form>h5 {
     text-decoration: none;
     background-color: #7fba00;
 }
+
+.list__category ul li a {
+    text-decoration: none;
+    transition: all .35s;
+}
+
+.list__category ul li a:hover {
+    color: #7fba00 !important;
+}
